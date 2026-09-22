@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#d9342b" />
+    <title>北京旅行攻略</title>
+    <script>
+      // lib.flexible:动态设置根字号,使 1rem = min(viewport, 750) / 10
+      // 设计稿 375 → 1rem=37.5px;桌面封顶 750 → 1rem=75px
+      (function () {
+        var docEl = document.documentElement
+        var tid
+        function setRem() {
+          var width = docEl.getBoundingClientRect().width
+          if (!width) return
+          var rem = Math.min(width, 750) / 10
+          docEl.style.fontSize = rem + 'px'
+        }
+        setRem()
+        window.addEventListener('resize', function () {
+          clearTimeout(tid)
+          tid = setTimeout(setRem, 100)
+        })
+        window.addEventListener('pageshow', setRem)
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

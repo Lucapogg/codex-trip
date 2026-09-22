@@ -1,0 +1,38 @@
+:root {
+  --color-primary: #d9342b;
+  --color-primary-dark: #b92820;
+  --color-primary-light: #fff1ef;
+  --color-accent: #c8a063;
+  --color-bg: #fafaf7;
+  --color-card: #ffffff;
+  --color-text: #222222;
+  --color-text-secondary: #666666;
+  --color-text-tertiary: #999999;
+  --color-border: #eeeeee;
+  --color-divider: #f2f2f2;
+  --color-star: #ffb800;
+
+  --radius-card: 12px;
+  --radius-button: 8px;
+  --radius-pill: 999px;
+
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-tab: 0 -2px 8px rgba(0, 0, 0, 0.04);
+  --shadow-sticky: 0 1px 4px rgba(0, 0, 0, 0.04);
+
+  --tab-bar-height: 56px;
+  --header-height: 44px;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+
+  --font-xs: 12px;
+  --font-sm: 13px;
+  --font-md: 14px;
+  --font-lg: 16px;
+  --font-xl: 18px;
+  --font-xxl: 22px;
+}
